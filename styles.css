@@ -50,7 +50,7 @@ main {
     border: 1px solid #ccc;
     background-color: #e0e0e0;
     transition: background-color 0.3s;
-    background-image: url('C:/Users/Frédéric/Downloads/chair_3258.webp'); /* Use an image for the seat */
+    background-image: url('C:\Users\Frédéric\my-ticket-app\chair_3258.webp'); /* Use an image for the seat */
     background-size: cover;
     color: transparent; /* Hide the text */
 }
