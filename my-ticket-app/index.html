@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue Sur GO Ticket</h1>
+    </header>
+    <main>
+        <div class="show-selection">
+            <label for="shows">Choisissez un spectacle:</label>
+            <select id="shows">
+                <option value="show1">Spectacle 1</option>
+                <option value="show2">Spectacle 2</option>
+                <option value="show3">Spectacle 3</option>
+            </select>
+        </div>
+        <div class="seats">
+            <!-- Les sièges seront générés ici par JavaScript -->
+        </div>
+        <form id="reservation-form" style="display: none;">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Réserver et Payer</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ticket Website</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
