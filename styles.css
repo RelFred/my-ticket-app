@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ff0000;  /* Changer la couleur en rouge */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.show-selection {
+    margin-bottom: 20px;
+}
+
+.seats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin-bottom: 20px;
+    position: relative;  /* Ensure position relative for separator */
+}
+.seat {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+    background-image: url('C:/Users/Frédéric/Downloads/chair_3258.webp'); /* Use an image for the seat */
+    background-size: cover;
+    color: transparent; /* Hide the text */
+}
+.seat.available {
+    background-color: #a0e7a0;
+}
+.seat.unavailable {
+    background-color: #e0a0a0;
+    cursor: not-allowed;
+}
+.seat.selected {
+    background-color: #6c757d;
+    color: transparent; /* Hide the text */
+}
+.separator {
+    grid-column: span 5;
+    height: 2px;
+    background-color: #fff;
+    border-top: 2px solid #000;
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form label, form input {
+    margin: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff0000; /* Changer la couleur en rouge */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc0000; /* Changer la couleur en rouge foncé */
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ff0000;  /* Changer la couleur en rouge */
+    color: white;
+}
